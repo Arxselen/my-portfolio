@@ -18,10 +18,18 @@ const Hero = () => {
         height: "100vh",
         display: "flex",
         alignItems: "center",
+        [theme.breakpoints.up('xs')]: { // <= mobile
+            paddingTop:"100px"
+        },
+
+        [theme.breakpoints.up('md')]: { // >= mobile
+            paddingTop:"0px"
+        }
+
     }))
 
     const Styledimg = styled("img")(({theme}) => ({
-        width: "80%",
+        width: "75%",
         borderRadius: "50%",
         border: `1px solid ${theme.palette.primary.contrastText}`,
     }));
