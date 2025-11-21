@@ -1,5 +1,14 @@
-const App = () => {
-  return <>App</>;
-};
+import Home from "./pages/Home/Home"
 
-export default App;
+
+const App = () => {
+
+
+  return (
+    <>
+       <Home />
+    </>
+  )
+}
+
+export default App
